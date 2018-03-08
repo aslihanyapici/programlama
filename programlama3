@@ -1,0 +1,24 @@
+print("Ekipman etkinlik oranini hesaplamak için eeo()  yaziniz ve girdilerinizi yaziniz")
+
+def kullanilabilirlik():
+    x=int(input("Planlanmis uretim suresini girin"))
+    y=int(input("Plansiz durus suresini girin"))
+    z=int(input("Planlanmis uretim suresini giriniz"))
+    kullanilabilirlik=(x-y)/z
+    return kullanilabilirlik
+def performans():
+    x=int(input("Standart cevrim suresini giriniz"))
+    y=int(input("Uretim miktarini giriniz"))
+    z=int(input("Planlanmis uretim suresini giriniz"))
+    q=int(input("Plansiz durus suresini giriniz"))
+    performans=(x*y)/(z-q)
+    return performans
+def kalite():
+    x=int(input("Planlanmis uretim suresini girin"))
+    y=int(input("Plansiz durus suresini girin"))
+    kalite=x/y
+    return kalite
+def eeo():
+    eeo=kullanilabilirlik()*performans()*kalite()
+    return eeo
+eeo()
