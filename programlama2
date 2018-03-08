@@ -1,0 +1,10 @@
+print("Adambasi cira degerini hesaplamak için adambasiciro() yaziniz")
+def ciro():
+    x=int(input("Satis miktarini giriniz"))
+    y=int(input("Birim satis miktarini giriniz"))
+    ciro=x*y
+    return ciro
+def adambasiciro():
+    calisansayisi=int(input("Calisan sayisini giriniz"))
+    adambasiciro=ciro()/calisansayisi
+    return adambasiciro
